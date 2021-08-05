@@ -13,6 +13,7 @@
 *{
     margin: 0; /* Creating space around the borders of elements */
     padding: 0; /* Creating space around elements INSIDE their borders*/
+    font-family: 'Atkinson Hyperlegible', sans-serif; /* Font selection */
 }
 
 /* Adjusting the properties of the header class */
@@ -24,4 +25,60 @@
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+/* Adjusting the properties of the upper navigation bar (inc image and nav links) */
+nav{
+    /* Adjusting the display behaviour : https://www.w3schools.com/cssref/pr_class_display.asp */
+    display: flex;
+    /* Adjusting the top/bottom and left/right padding based on the percentage 
+    of the parent element's width */
+    padding: 2% 6%;
+    /* Determining how the items in the container are spaced if they do not use
+    all available space on the main horizontal axis */
+    justify-content: space-between;
+    /* Align the items vertically */
+    align-items: center;
+}
+/* Just adjusting the properties of the image */
+nav img{
+    width: 55px
+}
+/* Just adusting the properties of the nav links list container*/
+.nav-links{
+    /* Adjusting the flexible length of flexible items; we've set these items as
+    flexible in the nav scope and here we determine how these flex items will 
+    grow or shrink to fit into the space available in the flex container */
+    flex: 1;
+    text-align: right;
+}
+/* Adjusting the properties of individual components of the links in the list */
+.nav-links ul li{ 
+    list-style: none; /* No bullet points */
+    display: inline-block; /* Allows us to apply height and width values */
+    padding: 8px 12px;
+    /* position doc : https://www.w3schools.com/cssref/pr_class_position.asp */
+    position: relative; /* Element is positioned relative to its normal position */
+}
+/* Adjusting the hyperlink(?) properties of the items in the list */
+.nav-links ul li a{ 
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+    /* Adding effects of hovering over the items in the list */
+/* Before hovering, have a line of width 0 under the items so that we can form a
+gradient that goes into the full red line effect once we've hovered over */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #36f44f;
+    display: block;
+    margin: auto;
+    transition: 0.5s; /* Transition time to get to the 'after' state */
+}
+.nav-links ul li:hover::after{
+    width: 100%;
 }
