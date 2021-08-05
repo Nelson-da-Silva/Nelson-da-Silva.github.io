@@ -82,3 +82,9 @@ gradient that goes into the full red line effect once we've hovered over */
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+/* Adjusting for smaller displays; any adjustments to the values above are added here
+    so that smaller/mobile displays take on these values instead */
+@media(max-width: 700px){
+
+}
