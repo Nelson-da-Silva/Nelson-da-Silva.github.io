@@ -128,10 +128,15 @@ gradient that goes into the full red line effect once we've hovered over */
 .footer_links ul li{
     list-style: none;
     display: inline-block;
+    padding: 0px 12px;
     position: relative;
 }
-.footer_links ul li a img{
-    width: 20px;
+.footer_links ul li img{
+    width: 18px;
+}
+.footer_links ul li p1{
+    color: #fff;
+    margin: 10px 0px;
 }
 
 /* About me page */
