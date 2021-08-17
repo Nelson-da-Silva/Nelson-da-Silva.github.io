@@ -253,6 +253,13 @@ gradient that goes into the full red line effect once we've hovered over */
     padding: 10% 2%;
     margin: 1% 1%;
     background: rgb(128, 168, 255);
+    background-size: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.projects_row .slot:hover{
+    background-color: blue;
 }
 .projects_row h{
     font-size: 20px;
@@ -261,6 +268,19 @@ gradient that goes into the full red line effect once we've hovered over */
 .projects_row .subheader{
     font-size: 10px;
     text-align: center;
+}
+/* Individual images for each box */
+.projects_row #countdown{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/dalby_court.jpg);
+}
+.projects_row #marsrover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/dalby_court.jpg);
+}
+.projects_row #worldofde10s{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/dalby_court.jpg);
 }
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
