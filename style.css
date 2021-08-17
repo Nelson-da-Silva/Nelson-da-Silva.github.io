@@ -226,6 +226,43 @@ gradient that goes into the full red line effect once we've hovered over */
     font-size: 75px;
 }
 
+
+    /* ---------- Projects page ---------- */
+.projects_header{
+    text-align: center;
+}
+.projects_header h1{
+    font-size: 90px;
+}
+
+.projects_images{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.projects_row{
+    left: 5%;
+    padding: 0% 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects_row .slot{
+    flex-basis: 30%;
+    border-radius: 2%;
+    text-align: center;
+    padding: 10% 2%;
+    margin: 1% 1%;
+    background: rgb(128, 168, 255);
+}
+.projects_row h{
+    font-size: 20px;
+    text-align: center;
+}
+.projects_row .subheader{
+    font-size: 10px;
+    text-align: center;
+}
+
 /* Adjusting for smaller displays; any adjustments to the values above are added here
     so that smaller/mobile displays take on these values instead */
 @media(max-width: 700px){
