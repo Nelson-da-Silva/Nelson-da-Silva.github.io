@@ -89,7 +89,7 @@ gradient that goes into the full red line effect once we've hovered over */
     background: #36f44f;
     display: block;
     margin: auto;
-    transition: 0.5s; /* Transition time to get to the 'after' state */
+    transition: 0.5s; /* Transition time to get to hover state */
 }
 .nav-links ul li:hover::after{
     width: 100%;
@@ -256,7 +256,7 @@ gradient that goes into the full red line effect once we've hovered over */
     background-size: 100%;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .projects_row .slot:hover{
     background-color: blue;
@@ -271,16 +271,74 @@ gradient that goes into the full red line effect once we've hovered over */
 }
 /* Individual images for each box */
 .projects_row #countdown{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), 
         url(images/dalby_court.jpg);
 }
+.projects_row #countdown:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/dalby_court.jpg);
+}
+
 .projects_row #marsrover{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
         url(images/dalby_court.jpg);
 }
+.projects_row #marsrover:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/dalby_court.jpg);    
+}
+
 .projects_row #worldofde10s{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
         url(images/dalby_court.jpg);
+}
+.projects_row #worldofde10s:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/dalby_court.jpg);
+}
+
+     /* -------------------------- PROJECT PAGES -------------------------- */
+.project_headline{
+    padding: 250px 50px;
+    width: 100%;
+    font-size: 60px;
+    color: white;
+}
+/* github logo */
+.project_headline img{
+    width: 60px;
+}
+
+.project_textbox{
+    margin: 20px 20px;
+    padding-bottom: 10%;
+    padding-right: 30%;
+    /* TODO : adjust this for smaller displays */
+}
+.project_textbox ul{
+    font-size: 20px;
+    justify-content: space-between;
+}
+.project_textbox ul li{
+    list-style: none;
+    min-height: 70px;
+    padding: 5px 0px;
+}
+.project_textbox h{
+    font-weight: bold;
+    top: 10px;
+    margin: 0px 30px;
+}
+.project_textbox p{
+    margin: 0px 10px;
+}
+.project_textbox #nios2list{
+    
+}
+
+     /* ------------- MARS ROVER ------------- */
+#marsrover_headline{
+    background-image: url(images/dalby_court.jpg);
 }
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
