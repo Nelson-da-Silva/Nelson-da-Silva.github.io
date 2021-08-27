@@ -49,55 +49,87 @@
         <a href="https://github.com/sdoif/PercyTheMarsRover"><img src="images/icons/github.png"></a>
     </div>
 
-    <div class="project_textbox" id="marsrover_text">
-        <ul>
-            <li>
-                <h> Collaborators </h>
-                <p> Salman Dhaif, Kaius Conway-Lai, Selin Uygun, Cem Yilmaz and Batuhan Çınar</p>        
-            </li>
-            <li>
-                <h> Duration </h>
-                <p> May 17th - June 17th 2021 </p>
-            </li>
-            <li>
-                <h> Languages and software involved </h>
-                <p> C, C++ Verilog </p>
-                <p> Eclipse, Quartus Prime, Arduino IDE </p>
-            </li>
-            <li>
-                <h> Overview </h>
-                <p> 
-                    We were tasked with creating a rover capable of autonomous and manual motion with 
-                    object detection where the target objects are 5 different coloured ping pong balls.
-                    This task was split into six subsystems : Command, Control, Drive, Energy, 
-                    Integration and Vision, each of which contribute to a vital role in the functionality 
-                    of the rover. More of what each role performs can be found on the Github page.
-                </p>
-            </li>
-            <li>
-                <h> My Roles </h>
-                <p> 
-                    I was tasked with the Vision subsystem which handled object detection using a D8M-Camera
-                    module connected to a DE10-Lite board holding an FPGA on which we configure a NIOS II
-                    processor and other components on.
+    <div class="project_mainbody">
+    <ul id="main">
+        <li>
+            <div class="project_textbox" id="marsrover_text">
+            <ul>
+                <li>
+                    <h> Collaborators </h>
+                    <p> Salman Dhaif, Kaius Conway-Lai, Selin Uygun, Cem Yilmaz and Batuhan Çınar</p>        
+                </li>
+                <li>
+                    <h> Duration </h>
+                    <p> May 17th - June 17th 2021 </p>
+                </li>
+                <li>
+                    <h> Languages and software involved </h>
+                    <p> C, C++ Verilog </p>
+                    <p> Eclipse, Quartus Prime, Arduino IDE </p>
+                </li>
+                <li>
+                    <h> Overview </h>
+                    <p> 
+                        We were tasked with creating a rover capable of autonomous and manual motion with 
+                        object detection where the target objects are 5 different coloured ping pong balls.
+                        This task was split into six subsystems : Command, Control, Drive, Energy, 
+                        Integration and Vision, each of which contribute to a vital role in the functionality 
+                        of the rover. More of what each role performs can be found on the Github page.
+                    </p>
+                </li>
+                <li>
+                    <h> My Roles </h>
+                    <p> 
+                        I was tasked with the Vision subsystem which handled object detection using a D8M-Camera
+                        module connected to a DE10-Lite board holding an FPGA on which we configure a NIOS II
+                        processor and other components on.
+                    </p>
+                    <br>
+                    <p>    
+                        The pixel information captured from camera is processed by a module configured onto the FPGA
+                        programmed through Quartus Prime. This module:
+                        <ul id="nios2_list">
+                            <li> analyses each pixel in the frames captured by the D8M-GPIO camera, </li>
+                            <li> applies a Gaussian blur, </li>
+                            <li> calculates the HSV values from the RGB values, </li>
+                            <li> identifies what colour the pixel is based on the HSV values, </li>
+                            <li> replaces background pixels with black and highlights pixels on the ping pong balls, </li>
+                            <li> applies a custom scan that looks at the previous 6 pixels and replaces the current pixel with black if 2 or more of the previous pixels are black, </li>
+                            <li> creates a boundary box around each ping pong ball based on the positions of that ping pong ball's specific colour, </li>
+                            <li> uses a state machine to send the boundary box coordinates and their corresponding colour to the NIOS II processor. </li>
+                        </ul>
+                    </p>
+                    <br>
+                    <p>    
+                        The NIOS II processor then performs the following tasks:
+                        <ul>
+                           <li>Measures the dimensions of the boundary boxes formed around the ping pong balls,</li>
+                            <li>Determines if the height and width of the box are similar enough to consider this box as that of a ping pong ball,</li>
+                            <li>Measures the central pixel of the boundary box and determines if camera is facing the ping pong ball head on,</li>
+                            <li>Measures the distance of the ping pong ball from the camera,</li>
+                            <li>Keeps track of what balls have already been seen overall and the closest ball in the 2nd scan,</li>
+                            <li>Uses a closed-loop system to ensure that the rover stays on track when going towards a ball,</li>
+                            <li>Forwards the necessary information to Control using UART.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul> 
+            </div>
+        </li>
 
-                    The pixel information captured from camera is processed by a module configured onto the FPGA
-                    programmed through Quartus Prime. This module:
-                    <ul id="nios2 list">
-                        <li> analyses each pixel in the frames captured by the D8M-GPIO camera, </li>
-                        <li> applies a Gaussian blur, </li>
-                        <li> calculates the HSV values from the RGB values, </li>
-                        <li> identifies what colour the pixel is based on the HSV values, </li>
-                        <li> replaces background pixels with black and highlights pixels on the ping pong balls, </li>
-                        <li> applies a custom scan that looks at the previous 6 pixels and replaces the current pixel with black if 2 or more of the previous pixels are black, </li>
-                        <li> creates a boundary box around each ping pong ball based on the positions of that ping pong ball's specific colour, </li>
-                        <li> uses a state machine to send the boundary box coordinates and their corresponding colour to the NIOS II processor. </li>
-                    </ul>
-                </p>
+        <li>
+            <div class="project_imagecolumn">
+            <ul>
+                <li>
+                    <a href="images/dalby_court.jpg"><img src="images/dalby_court.jpg"></a>
+                    <p> Caption </p>
             </li>
-        </ul>
+                <li><a href="images/dalby_court.jpg"><img src="images/dalby_court.jpg"></a></li>
+            </ul>
 
-        
+            </div>
+        </li>
+    </ul>
     </div>
 
     <div class="footer">

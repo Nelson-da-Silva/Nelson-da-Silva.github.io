@@ -309,15 +309,25 @@ gradient that goes into the full red line effect once we've hovered over */
     width: 60px;
 }
 
-.project_textbox{
-    margin: 20px 20px;
+.project_mainbody #main{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 20px;
     padding-bottom: 10%;
-    padding-right: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project_textbox{
+    width: 100%;
+    left: 0px;
     /* TODO : adjust this for smaller displays */
 }
 .project_textbox ul{
     font-size: 20px;
     justify-content: space-between;
+    max-width: 1200px;
 }
 .project_textbox ul li{
     list-style: none;
@@ -332,8 +342,34 @@ gradient that goes into the full red line effect once we've hovered over */
 .project_textbox p{
     margin: 0px 10px;
 }
-.project_textbox #nios2list{
-    
+/* Lists in the paragraphs */
+.project_textbox ul li ul{
+    justify-content: flex-start;
+    padding: 0px 40px;
+}
+.project_textbox ul li ul li{
+    list-style: square;
+    padding: 0px;
+    min-height: 0px;
+}
+
+.project_imagecolumn{
+    max-width: 700px;
+    min-width: 30%;
+}
+.project_imagecolumn ul{
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: start;
+}
+.project_imagecolumn img{
+    max-height: 750px;
+    max-width: 500px; 
+    width: 100%;
+}
+.project_imagecolumn p{
+    padding-bottom: 20px;
 }
 
      /* ------------- MARS ROVER ------------- */
