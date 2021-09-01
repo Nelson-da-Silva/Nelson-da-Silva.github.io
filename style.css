@@ -134,6 +134,7 @@ gradient that goes into the full red line effect once we've hovered over */
     align-items: center;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
         url(images/dalby_court_footer.jpg);
+    position: relative;
 }
 .footer p{
     color: #fff;
@@ -314,7 +315,7 @@ gradient that goes into the full red line effect once we've hovered over */
     list-style: none;
     justify-content: space-between;
     padding-top: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
