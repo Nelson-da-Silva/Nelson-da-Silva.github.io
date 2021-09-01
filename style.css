@@ -356,6 +356,8 @@ gradient that goes into the full red line effect once we've hovered over */
 .project_imagecolumn{
     max-width: 700px;
     min-width: 30%;
+    margin-top: 30px;
+    margin-right: 30px;
 }
 .project_imagecolumn ul{
     list-style: none;
@@ -374,7 +376,7 @@ gradient that goes into the full red line effect once we've hovered over */
 
      /* ------------- MARS ROVER ------------- */
 #marsrover_headline{
-    background-image: url(images/dalby_court.jpg);
+    background-image: url(images/projects/mars_rover/headline.jpg);
 }
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
