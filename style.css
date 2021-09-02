@@ -271,6 +271,11 @@ gradient that goes into the full red line effect once we've hovered over */
     text-align: center;
 }
 /* Individual images for each box */
+.projects_row .slot{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 .projects_row #countdown{
     background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), 
         url(images/dalby_court.jpg);
@@ -282,11 +287,11 @@ gradient that goes into the full red line effect once we've hovered over */
 
 .projects_row #marsrover{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
-        url(images/dalby_court.jpg);
+        url(images/projects/mars_rover/thumbnail.jpg);
 }
 .projects_row #marsrover:hover{
     background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
-        url(images/dalby_court.jpg);    
+        url(images/projects/mars_rover/thumbnail.jpg);    
 }
 
 .projects_row #worldofde10s{
@@ -301,7 +306,7 @@ gradient that goes into the full red line effect once we've hovered over */
      /* -------------------------- PROJECT PAGES -------------------------- */
 .project_headline{
     padding: 250px 50px;
-    width: 100%;
+    max-width: 100%;
     font-size: 60px;
     color: white;
 }
