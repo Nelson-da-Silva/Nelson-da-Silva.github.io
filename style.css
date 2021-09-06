@@ -297,11 +297,11 @@ gradient that goes into the full red line effect once we've hovered over */
 
 .projects_row #worldofde10s{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
-        url(images/dalby_court.jpg);
+        url(images/projects/world_of_de10s/de10_landscape.jpg);
 }
 .projects_row #worldofde10s:hover{
     background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
-        url(images/dalby_court.jpg);
+        url(images/projects/world_of_de10s/de10_landscape.jpg);
 }
 
      /* -------------------------- PROJECT PAGES -------------------------- */
