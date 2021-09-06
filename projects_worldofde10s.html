@@ -81,15 +81,24 @@
                 <li>
                     <h> My Roles </h>
                     <p> 
-                        My 
-                    </p>
-                    <br>
-                    <p>    
-
-                    </p>
-                    <br>
-                    <p>    
-
+                        I was designated with the task of handling the DE10-Lite boards on which the FPGAs are
+                        placed on and connecting their input/output with the rest of the system. My tasks involved:
+                        <ul>
+                            <li>Setting up the components of the DE10-Lite board such as the accelerometer
+                                and the FPGA together in Quartus Prime using Qsys/Platform designer,
+                            </li>
+                            <li>
+                                Forming a method of receiving data from and transferring data to a host PC
+                                running a python script which is also connected to the server. This was done
+                                using JTAG UART.
+                            </li>
+                            <li>
+                                Writing code in C to run on the NIOS II processor configured on the FPGA which
+                                controls other components on the DE-10 Lite board such as LEDs and 7-segment displays
+                                therefore allowing information from the game coming through the server allow visual
+                                changes to be seen on the controller such as the player's score and if they've won.
+                            </li>
+                        </ul>
                     </p>
                 </li>
             </ul> 
