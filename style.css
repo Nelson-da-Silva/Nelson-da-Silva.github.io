@@ -276,6 +276,7 @@ gradient that goes into the full red line effect once we've hovered over */
     background-size: cover;
     position: relative;
 }
+
 .projects_row #countdown{
     background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), 
         url(images/dalby_court.jpg);
@@ -383,6 +384,10 @@ gradient that goes into the full red line effect once we've hovered over */
      /* ------------- MARS ROVER ------------- */
 #marsrover_headline{
     background-image: url(images/projects/mars_rover/headline.jpg);
+}
+#worldofde10s_headline{
+    background-image: url(images/projects/world_of_de10s/de10_landscape.jpg);
+    background-position: center;
 }
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
