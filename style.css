@@ -248,7 +248,7 @@ gradient that goes into the full red line effect once we've hovered over */
     justify-content: space-between;
 }
 .projects_row .slot{
-    flex-basis: 30%;
+    flex-basis: 100%;
     border-radius: 2%;
     text-align: center;
     padding: 10% 2%;
@@ -302,6 +302,14 @@ gradient that goes into the full red line effect once we've hovered over */
 .projects_row #worldofde10s:hover{
     background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
         url(images/projects/world_of_de10s/de10_landscape.jpg);
+}
+.projects_row #compiler{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/projects/compiler/fullscreen_code.jpg);
+}
+.projects_row #compiler:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/projects/compiler/fullscreen_code.jpg);
 }
 
      /* -------------------------- PROJECT PAGES -------------------------- */
@@ -388,6 +396,12 @@ gradient that goes into the full red line effect once we've hovered over */
 #worldofde10s_headline{
     background-image: url(images/projects/world_of_de10s/de10_landscape.jpg);
     background-position: center;
+}
+#compiler_headline{
+    background-image: url(images/projects/compiler/fullscreen_code.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* position: relative */
 }
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
