@@ -321,6 +321,16 @@ gradient that goes into the full red line effect once we've hovered over */
         url(images/projects/verilog_cpu.jpg);
 }
 
+.projects_row #mu0_cpu{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+        url(images/projects/mu0/quartus.png);
+}
+.projects_row #mu0_cpu:hover{
+    background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),
+        url(images/projects/mu0/quartus.png);
+    color: black;
+}
+
      /* -------------------------- PROJECT PAGES -------------------------- */
 .project_headline{
     padding: 250px 50px;
@@ -415,6 +425,13 @@ gradient that goes into the full red line effect once we've hovered over */
 #projects_veri-mips-cpu_headline{
     background-image: url(images/projects/verilog_cpu.jpg);
     background-repeat: no-repeat;
+}
+#mu0_headline{
+    /* background-color: rgb(235, 62, 62); */
+    background-image: url(images/projects/mu0/quartus.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: black;
 }
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
