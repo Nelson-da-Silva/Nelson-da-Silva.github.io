@@ -1,0 +1,129 @@
+/*  
+    CSS files describe how HTML elements are displayed on the screen.
+    It is used to define styles for web pages including the design, layout
+        and variations in display for different devices and screen sizes.
+    https://www.w3schools.com/css/css_intro.asp
+*/
+
+/*
+    CSS Syntax - https://www.w3schools.com/css/css_syntax.asp
+*/
+
+/* Adjusting the style for all elements using * */
+*{
+    margin: 0; /* Creating space around the borders of elements */
+    padding: 0; /* Creating space around elements INSIDE their borders*/
+    /* font-family: 'Atkinson Hyperlegible', sans-serif; Font selection */
+    font-family: 'Nunito', sans-serif;
+}
+
+    /* ---------- Projects page ---------- */
+.projects_header{
+    text-align: center;
+}
+.projects_header h1{
+    font-size: 90px;
+}
+
+.projects_images{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.projects_row{
+    left: 5%;
+    padding: 0% 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects_row .slot{
+    flex-basis: 100%;
+    border-radius: 2%;
+    text-align: center;
+    padding: 10% 2%;
+    margin: 1% 1%;
+    background: rgb(128, 168, 255);
+    background-size: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.projects_row .slot:hover{
+    background-color: blue;
+}
+.projects_row h{
+    font-size: 20px;
+    text-align: center;
+}
+.projects_row .subheader{
+    font-size: 10px;
+    text-align: center;
+}
+/* Individual images for each box */
+.projects_row .slot{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.projects_row #countdown{
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), 
+        url(images/dalby_court.jpg);
+}
+.projects_row #countdown:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/dalby_court.jpg);
+}
+
+.projects_row #marsrover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/projects/mars_rover/thumbnail.jpg);
+}
+.projects_row #marsrover:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/projects/mars_rover/thumbnail.jpg);    
+}
+
+.projects_row #worldofde10s{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/projects/world_of_de10s/de10_landscape.jpg);
+}
+.projects_row #worldofde10s:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/projects/world_of_de10s/de10_landscape.jpg);
+}
+.projects_row #compiler{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/projects/compiler/fullscreen_code.jpg);
+}
+.projects_row #compiler:hover{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
+        url(images/projects/compiler/fullscreen_code.jpg);
+}
+
+.projects_row #verilog-mips-cpu{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+        url(images/projects/verilog_cpu.jpg);
+}
+.projects_row #verilog-mips-cpu:hover{
+    background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),
+        url(images/projects/verilog_cpu.jpg);
+}
+
+.projects_row #mu0_cpu{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+        url(images/projects/mu0/quartus.png);
+}
+.projects_row #mu0_cpu:hover{
+    background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),
+        url(images/projects/mu0/quartus.png);
+    color: black;
+}
+
+/* Adjusting for smaller displays; any adjustments to the values above are added here
+    so that smaller/mobile displays take on these values instead */
+@media(max-width: 700px){
+    .index_text-box h1{
+        font-size: 200%;
+    }
+}

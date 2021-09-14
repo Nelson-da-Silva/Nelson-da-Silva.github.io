@@ -1,0 +1,157 @@
+/*  
+    CSS files describe how HTML elements are displayed on the screen.
+    It is used to define styles for web pages including the design, layout
+        and variations in display for different devices and screen sizes.
+    https://www.w3schools.com/css/css_intro.asp
+*/
+
+/*
+    CSS Syntax - https://www.w3schools.com/css/css_syntax.asp
+*/
+
+/* Adjusting the style for all elements using * */
+*{
+    margin: 0; /* Creating space around the borders of elements */
+    padding: 0; /* Creating space around elements INSIDE their borders*/
+    /* font-family: 'Atkinson Hyperlegible', sans-serif; Font selection */
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Default headers */
+.header{
+    min-height: 10%;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/dalby_court.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Adjusting the properties of the upper navigation bar (inc logo and nav links) */
+nav{
+    /* Adjusting the display behaviour : https://www.w3schools.com/cssref/pr_class_display.asp */
+    display: flex;
+    /* Adjusting the top/bottom and left/right padding based on the percentage 
+    of the parent element's width */
+    padding: 2% 6%;
+    /* Determining how the items in the container are spaced if they do not use
+    all available space on the main horizontal axis */
+    justify-content: space-between;
+    /* Align the items vertically */
+    align-items: center;
+}
+/* Just adjusting the properties of the image */
+nav img{
+    width: 55px
+}
+/* Just adusting the properties of the nav links list container*/
+.nav-links{
+    /* Adjusting the flexible length of flexible items; we've set these items as
+    flexible in the nav scope and here we determine how these flex items will 
+    grow or shrink to fit into the space available in the flex container */
+    flex: 1;
+    text-align: right;
+}
+/* Adjusting the properties of individual components of the links in the list */
+.nav-links ul li{ 
+    list-style: none; /* No bullet points */
+    display: inline-block; /* Allows us to apply height and width values */
+    padding: 8px 12px;
+    /* position doc : https://www.w3schools.com/cssref/pr_class_position.asp */
+    position: relative; /* Element is positioned relative to its normal position */
+}
+/* Adjusting the hyperlink(?) properties of the items in the list */
+.nav-links ul li a{ 
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+    /* Adding effects of hovering over the items in the list */
+/* Before hovering, have a line of width 0 under the items so that we can form a
+gradient that goes into the full red line effect once we've hovered over */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #36f44f;
+    display: block;
+    margin: auto;
+    transition: 0.5s; /* Transition time to get to hover state */
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.index_text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.index_text-box h1{
+    font-size: 400%;
+}
+
+.index_footer{
+    display: flex;
+    position: fixed;
+    padding: 2%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.index_footer p{
+    color: #fff;
+}
+
+.footer{
+    display: flex;
+    position: fixed;
+    padding: 1%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/dalby_court_footer.jpg);
+    position: relative;
+}
+.footer p{
+    color: #fff;
+}
+
+.footer_links{
+    text-align: right;
+    flex: 1;
+}
+.footer_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.footer_links ul li img{
+    width: 18px;
+}
+.footer_links ul li p1{
+    color: #fff;
+    margin: 10px 0px;
+}
+
+
+/* Adjusting for smaller displays; any adjustments to the values above are added here
+    so that smaller/mobile displays take on these values instead */
+@media(max-width: 700px){
+    .index_text-box h1{
+        font-size: 200%;
+    }
+}

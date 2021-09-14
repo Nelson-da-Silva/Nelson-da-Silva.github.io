@@ -1,0 +1,141 @@
+<!-- Projects page : showcasing my projects -->
+<!DOCTYPE html>
+<html>
+
+<!-- Meta information for the HTML page -->
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <!-- Title for the HTML page - shown in the page's tab -->
+    <title> Projects : MU0 CPU </title> 
+
+    <!-- Connecting this HTML document to the associated style.css file -->
+    <link rel="stylesheet" href="../header_footer.css">
+    <link rel="stylesheet" href="project_pages_style.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Creating the class header which we set as the upper bit of the webpage -->
+    <section class="header">
+        <nav> <!-- Grouping navigation links -->
+            <!-- a - Hyperlink back to the main website using a logo -->
+            <a href="index.html"><img src="../images/logo_white.png"></a> <!-- https://www.fontspace.com/big-noodle-titling-font-f35093-->
+            <!-- div acts as a container for HTML elements -->
+            <div class="nav-links"> 
+                <ul> <!-- Defining an unordered bulleted list -->
+                    <!-- <li> represents an item in a list -->
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT ME</a> </li>
+                    <li><a href="projects.html">PROJECTS</a> </li>
+                    <li><a href="experience.html">EXPERIENCE</a> </li>
+                    <!-- <li><a href="contact.html">CONTACT</a> </li> -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="project_headline" id="mu0_headline">
+        <h> MIPS CPU </h>
+        <!-- <a href="GITHUB LINK"><img src="../images/icons/github.png"></a> -->
+    </div>
+
+    <div class="project_mainbody">
+    <ul id="main">
+        <li>
+            <div class="project_textbox" id="mu0_text">
+            <ul>
+                <li>
+                    <h> Collaborators </h>
+                    <p> Bernard Benz, Matilde Piccoli </p>        
+                </li>
+                <li>
+                    <h> Duration </h>
+                    <p> May 20th - June 14th 2020 </p>
+                </li>
+                <li>
+                    <h> Languages and software involved </h>
+                    <p> Verilog </p>
+                    <p> Quartus Prime </p>
+                </li>
+                <li>
+                    <h> Overview </h>
+                    <p> 
+                        This project was completed as part of our end of 1st year project for Electronic Engineering
+                        at Imperial College London. It was based on the Digital Electronics and Computer Architecture
+                        module.
+                        <br>
+                        We were tasked with designing a CPU with an ISA optimised for the following algorithms:
+                        <ul>
+                            <li> Calculate Fibonacci numbers using recursion, </li>
+                            <li> Calculate pseudo-random integers with a linear congruential generator (LCG), </li>
+                            <li> Traverse a linked list to find an item. </li>
+                        </ul>
+                        <br>
+                        In addition to designing the CPU, we also had to write a report discussing the aspects
+                        of our CPU such as the speed when completing the tasks and power consumption.
+                    </p>
+                </li>
+                <li>
+                    <h> My Roles </h>
+                    <p> 
+                        I mainly worked on optimising the CPU for the task of calculating Fibonacci numbers using
+                        recursion. This task introduced me to stack memory which uses the 'last in, first out' data
+                        structure which we were directed to use to implement this task. The section of the report
+                        detailing the process I underwent and the final product for the Fibonacci number generator
+                        can be found <a href="../images/projects/mu0/fibonacci_writeup.pdf">here</a>.
+                    </p>
+                </li>
+            </ul> 
+            </div>
+        </li>
+
+        <li>
+            <!-- <div class="project_imagecolumn">
+            <ul>
+                <li>
+                    <a href="../images/projects/"><img src="../images/projects/"></a>
+                    <p> CAPTION </p>
+                </li>
+                <li>
+                    <a href="../images/projects/"><img src="../images/projects/"></a>
+                    <p> CAPTION </p>
+                </li>
+                <li>
+                    <a href="../images/projects/"><img src="../images/projects/"></a>
+                    <p> CAPTION </p>   
+                </li>
+            </ul>
+
+            </div> -->
+        </li>
+    </ul>
+    </div>
+
+    <section class="footer">
+        <p>Website programmed and designed by Nelson da Silva using HTML and CSS in Summer 2021</p>
+        <div class="footer_links">
+            <ul>
+                <li><p1>nelsondsbusiness@gmail.com</p1></li>
+                <!-- <li><i class="fa fa-clipboard" aria-hidden="true" onclick="copyToClipboard('#p1')"></i></li> -->
+                <li><p1>+447 449 084 516</p1></li>
+                <!-- <li><img onclick="copyToClipboard()" src="../images/icons/copy.png"></li> -->
+                <li><p2><a href="https://www.linkedin.com/in/nelson-da-silva19/"><img src="../images/icons/linkedin.png"></a></p2></li>
+            </ul>
+        </div>
+    </section>    
+
+</body>
+
+
+</html>

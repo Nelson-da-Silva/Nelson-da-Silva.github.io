@@ -1,0 +1,157 @@
+<!-- Projects page : showcasing my projects -->
+<!DOCTYPE html>
+<html>
+
+<!-- Meta information for the HTML page -->
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <!-- Title for the HTML page - shown in the page's tab -->
+    <title> Projects : Compiler </title> 
+
+    <!-- Connecting this HTML document to the associated style.css file -->
+    <link rel="stylesheet" href="../header_footer.css">
+    <link rel="stylesheet" href="project_pages_style.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Creating the class header which we set as the upper bit of the webpage -->
+    <section class="header">
+        <nav> <!-- Grouping navigation links -->
+            <!-- a - Hyperlink back to the main website using a logo -->
+            <a href="../index.html"><img src="../images/logo_white.png"></a> <!-- https://www.fontspace.com/big-noodle-titling-font-f35093-->
+            <!-- div acts as a container for HTML elements -->
+            <div class="nav-links"> 
+                <ul> <!-- Defining an unordered bulleted list -->
+                    <!-- <li> represents an item in a list -->
+                    <li><a href="../index.html">HOME</a> </li>
+                    <li><a href="../about.html">ABOUT ME</a> </li>
+                    <li><a href="../projects.html">PROJECTS</a> </li>
+                    <li><a href="../experience.html">EXPERIENCE</a> </li>
+                    <!-- <li><a href="contact.html">CONTACT</a> </li> -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="project_headline" id="compiler_headline">
+        <h> Compiler </h>
+        <!-- <a href="https://github.com/LangProc/langproc-2020-cw-ArsenalFanTV"><img src="images/icons/github.png"></a> -->
+    </div>
+
+    <div class="project_mainbody">
+    <ul id="main">
+        <li>
+            <div class="project_textbox" id="compiler_text">
+            <ul>
+                <li>
+                    <h> Collaborators </h>
+                    <p> Zion Darko </p>        
+                </li>
+                <li>
+                    <h> Duration </h>
+                    <p> March 8th - March 29th 2021 </p>
+                </li>
+                <li>
+                    <h> Languages and software involved </h>
+                    <p> C++, Yacc, Flex, Shell </p>
+                </li>
+                <li>
+                    <h> Overview </h>
+                    <p> 
+                        This project followed 6 weeks worth of lab content for the Instruction Architectures
+                        and Compilers module in 2nd year. This consisted of 3 2-week labs focused on the core components
+                        of a compiler:
+                        <ul>
+                            <li>
+                                Weeks 1-2 assessed our ability to work with a lexer using Flex to break down input
+                                streams of text into words, decimals and fractions then calculate the sum of the 
+                                numbers in the input text and form a histogram from the words detected. 
+                            </li>
+                            <li>
+                                Weeks 3-4 were centred on parsing using Yacc. Input mathematical expressions
+                                would be passed through a pre-written lexer and then through our parser. Forming an AST
+                                (Abstract Syntax Tree) using inheritance in C++, the parsed input would have it's type 
+                                and variables identified. This then allowed us to call a function which would compare the
+                                result of the parsed expression (where values for the variables have been given) 
+                                with a given test-case answer to verify if the expression was parsed correctly.
+                                <br>
+                                Our job was to write the remaining parser logic and fill in the relevant functions in 
+                                the AST.
+                            </li>
+                            <li>
+                                The final weeks (5-6) were finally focused on compiling parsed input into machine code.
+                                The target language was something made up by the professor for the purpose of this task only.
+                            </li>
+                        </ul>
+                        <br>
+                        After the labs, we commenced the project of writing a whole compiler from the ground up. This began
+                        with writing a lexer using Flex to break down input streams of text into its tokens. Afterwards, a parser
+                        would attempt to identify constructs such as if statements, while loops, variable assignments etc. We
+                        created an AST using a series of header files written in C++ to then handle compilation of the parsed
+                        information.
+                        <br>
+                        <br>
+                        As well as using Yacc, Flex and C++, I learnt how Makefiles work to alleviate compilation of our files.
+                    </p>
+                </li>
+                <!-- <li>
+                    <h> My Roles </h>
+                    <p> 
+
+                    </p>
+                </li> -->
+            </ul> 
+            </div>
+        </li>
+
+        <li>
+            <!-- <div class="project_imagecolumn">
+            <ul>
+                <li>
+                    <a href="images/projects/"><img src="images/projects/"></a>
+                    <p> CAPTION </p>
+                </li>
+                <li>
+                    <a href="images/projects/"><img src="images/projects/"></a>
+                    <p> CAPTION </p>
+                </li>
+                <li>
+                    <a href="images/projects/"><img src="images/projects/"></a>
+                    <p> CAPTION </p>   
+                </li>
+            </ul>
+
+            </div> -->
+        </li>
+    </ul>
+    </div>
+
+    <section class="footer">
+        <p>Website programmed and designed by Nelson da Silva using HTML and CSS in Summer 2021</p>
+        <div class="footer_links">
+            <ul>
+                <li><p1>nelsondsbusiness@gmail.com</p1></li>
+                <!-- <li><i class="fa fa-clipboard" aria-hidden="true" onclick="copyToClipboard('#p1')"></i></li> -->
+                <li><p1>+447 449 084 516</p1></li>
+                <!-- <li><img onclick="copyToClipboard()" src="images/icons/copy.png"></li> -->
+                <li><p2><a href="https://www.linkedin.com/in/nelson-da-silva19/"><img src="../images/icons/linkedin.png"></a></p2></li>
+            </ul>
+        </div>
+    </section>    
+
+</body>
+
+
+</html>

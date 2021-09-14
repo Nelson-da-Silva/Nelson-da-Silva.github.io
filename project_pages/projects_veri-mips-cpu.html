@@ -1,0 +1,171 @@
+<!-- Projects page : showcasing my projects -->
+<!DOCTYPE html>
+<html>
+
+<!-- Meta information for the HTML page -->
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <!-- Title for the HTML page - shown in the page's tab -->
+    <title> Projects : Verilog MIPS CPU </title> 
+
+    <!-- Connecting this HTML document to the associated style.css file -->
+    <link rel="stylesheet" href="../header_footer.css">
+    <link rel="stylesheet" href="project_pages_style.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Creating the class header which we set as the upper bit of the webpage -->
+    <section class="header">
+        <nav> <!-- Grouping navigation links -->
+            <!-- a - Hyperlink back to the main website using a logo -->
+            <a href="index.html"><img src="../images/logo_white.png"></a> <!-- https://www.fontspace.com/big-noodle-titling-font-f35093-->
+            <!-- div acts as a container for HTML elements -->
+            <div class="nav-links"> 
+                <ul> <!-- Defining an unordered bulleted list -->
+                    <!-- <li> represents an item in a list -->
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT ME</a> </li>
+                    <li><a href="projects.html">PROJECTS</a> </li>
+                    <li><a href="experience.html">EXPERIENCE</a> </li>
+                    <!-- <li><a href="contact.html">CONTACT</a> </li> -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="project_headline" id="projects_veri-mips-cpu_headline">
+        <h> Verilog MIPS CPU </h>
+        <a href="https://github.com/NDS19/isa_team3_mips"><img src="../images/icons/github.png"></a>
+    </div>
+
+    <div class="project_mainbody">
+    <ul id="main">
+        <li>
+            <div class="project_textbox" id="PROJECTNAME_text">
+            <ul>
+                <li>
+                    <h> Collaborators </h>
+                    <p> Yuna Valade, Maximus Wickham, Dominic Clough, Aleksandar Limonov and Leonardo Garofalo </p>        
+                </li>
+                <li>
+                    <h> Duration </h>
+                    <p> November 25th - December 21st 2020 </p>
+                </li>
+                <li>
+                    <h> Languages and software involved </h>
+                    <p> Verilog, C++, Shell, Python </p>
+                </li>
+                <li>
+                    <h> Overview </h>
+                    <p> 
+                        This 6-person project was given as part of the Instruction Set Architecture
+                        and Compilers module in the 2nd year of Imperial's Electronic and Information
+                        Engineering course. The task was to create a working synthesizable 32-bit instructions
+                        MIPS multicycle processor using Verilog capable of executing 48 given instructions.
+                        <br>
+                        Additionally, we were to write a testbench using a shell script file that
+                        tested the CPU for all 48 instructions.
+                    </p>
+                </li>
+                <li>
+                    <h> My Roles </h>
+                    <p> 
+                        I was tasked with creating the testbench for the CPU and writing most test cases.
+                        I found it really interesting researching how these shell scripts work and applying
+                        it in our own project taught me a lot and gave me confidence in using this in future
+                        tasks/projects.
+                        <br>
+                        The testbench worked by:
+                        <ul>
+                            <li>
+                                Iterating through a folder of testcases and running them through an assembler
+                                which output the corresponding MIPS assembly language for those testcases in
+                                a separate folder,
+                            </li>
+                            <li>
+                                Compiling the CPU files together into one and initialising the RAM with
+                                the input assembly language files,
+                            </li>
+                            <li>
+                                Executing the compiled file of each test case and storing its output in a
+                                separate file,
+                            </li>
+                            <li>
+                                Extracting each line from the output file with the prefix "RESULT : " into another
+                                file then removing that prefix and storing purely the result in a final output file,
+                            </li>
+                            <li>
+                                Comparing the result of each test case with the pre-written reference result.
+                            </li>
+                        </ul>
+                        <br>
+                        One of the difficulties I faced with the testbench was writing about 5 testcases for
+                        each of the 48 instructions. I decided to write a script and C++ file that automatically
+                        generates values and set up testcases for me for most of the instructions which wouldn't
+                        need manual testcases written for them such as ADD instructions where the format for the
+                        instructions in the testcases is always the same. For instructions that did need
+                        checking for corner cases, they had extra test cases that were manually written.
+                        <br>
+                        This allowed me to apply the shell script skills I learnt from writing the testbench.
+                        A single C++ file would take in the instruction we wanted testcases for and output the
+                        test instructions and the expected result all in a single file but with prefixes determining 
+                        what they are. The shellscript would then extract the specific lines, remove the prefixes
+                        then place the instructions in a single file in one directory and the reference results in a
+                        single file in another directory.
+                    </p>
+                </li>
+            </ul> 
+            </div>
+        </li>
+
+        <!-- <li>
+            <div class="project_imagecolumn">
+            <ul>
+                <li>
+                    <a href="../images/projects/"><img src="../images/projects/"></a>
+                    <p> CAPTION </p>
+                </li>
+                <li>
+                    <a href="../images/projects/"><img src="../images/projects/"></a>
+                    <p> CAPTION </p>
+                </li>
+                <li>
+                    <a href="../images/projects/"><img src="../images/projects/"></a>
+                    <p> CAPTION </p>   
+                </li>
+            </ul>
+
+            </div>
+        </li> -->
+    </ul>
+    </div>
+
+    <section class="footer">
+        <p>Website programmed and designed by Nelson da Silva using HTML and CSS in Summer 2021</p>
+        <div class="footer_links">
+            <ul>
+                <li><p1>nelsondsbusiness@gmail.com</p1></li>
+                <!-- <li><i class="fa fa-clipboard" aria-hidden="true" onclick="copyToClipboard('#p1')"></i></li> -->
+                <li><p1>+447 449 084 516</p1></li>
+                <!-- <li><img onclick="copyToClipboard()" src="../images/icons/copy.png"></li> -->
+                <li><p2><a href="https://www.linkedin.com/in/nelson-da-silva19/"><img src="../images/icons/linkedin.png"></a></p2></li>
+            </ul>
+        </div>
+    </section>    
+
+</body>
+
+
+</html>

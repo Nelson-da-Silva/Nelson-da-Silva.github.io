@@ -1,0 +1,129 @@
+/*  
+    CSS files describe how HTML elements are displayed on the screen.
+    It is used to define styles for web pages including the design, layout
+        and variations in display for different devices and screen sizes.
+    https://www.w3schools.com/css/css_intro.asp
+*/
+
+/*
+    CSS Syntax - https://www.w3schools.com/css/css_syntax.asp
+*/
+
+/* Adjusting the style for all elements using * */
+*{
+    margin: 0; /* Creating space around the borders of elements */
+    padding: 0; /* Creating space around elements INSIDE their borders*/
+    /* font-family: 'Atkinson Hyperlegible', sans-serif; Font selection */
+    font-family: 'Nunito', sans-serif;
+}
+
+     /* -------------------------- PROJECT PAGES -------------------------- */
+.project_headline{
+    padding: 250px 50px;
+    max-width: 100%;
+    font-size: 60px;
+    color: white;
+}
+/* github logo */
+.project_headline img{
+    width: 60px;
+}
+
+.project_mainbody #main{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project_textbox{
+    width: 100%;
+    left: 0px;
+    /* TODO : adjust this for smaller displays */
+}
+.project_textbox ul{
+    font-size: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.project_textbox ul li{
+    list-style: none;
+    min-height: 70px;
+    padding: 5px 0px;
+}
+.project_textbox h{
+    font-weight: bold;
+    top: 10px;
+    margin: 0px 30px;
+}
+.project_textbox p{
+    margin: 0px 10px;
+}
+/* Lists in the paragraphs */
+.project_textbox ul li ul{
+    justify-content: flex-start;
+    padding: 0px 40px;
+}
+.project_textbox ul li ul li{
+    list-style: square;
+    padding: 0px;
+    min-height: 0px;
+}
+
+.project_imagecolumn{
+    max-width: 700px;
+    min-width: 30%;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.project_imagecolumn ul{
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: start;
+}
+.project_imagecolumn img{
+    max-height: 750px;
+    max-width: 500px; 
+    width: 100%;
+}
+.project_imagecolumn p{
+    padding-bottom: 20px;
+}
+
+     /* ------------- MARS ROVER ------------- */
+#marsrover_headline{
+    background-image: url(../images/projects/mars_rover/headline.jpg);
+}
+#worldofde10s_headline{
+    background-image: url(../images/projects/world_of_de10s/de10_landscape.jpg);
+    background-position: center;
+}
+#compiler_headline{
+    background-image: url(../images/projects/compiler/fullscreen_code.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* position: relative */
+}
+#projects_veri-mips-cpu_headline{
+    background-image: url(../images/projects/verilog_cpu.jpg);
+    background-repeat: no-repeat;
+}
+#mu0_headline{
+    /* background-color: rgb(235, 62, 62); */
+    background-image: url(../images/projects/mu0/quartus.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: black;
+}
+
+/* Adjusting for smaller displays; any adjustments to the values above are added here
+    so that smaller/mobile displays take on these values instead */
+@media(max-width: 700px){
+    .index_text-box h1{
+        font-size: 200%;
+    }
+}
