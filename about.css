@@ -1,0 +1,95 @@
+/*  
+    CSS files describe how HTML elements are displayed on the screen.
+    It is used to define styles for web pages including the design, layout
+        and variations in display for different devices and screen sizes.
+    https://www.w3schools.com/css/css_intro.asp
+*/
+
+/*
+    CSS Syntax - https://www.w3schools.com/css/css_syntax.asp
+*/
+
+/* Adjusting the style for all elements using * */
+*{
+    margin: 0; /* Creating space around the borders of elements */
+    padding: 0; /* Creating space around elements INSIDE their borders*/
+    /* font-family: 'Atkinson Hyperlegible', sans-serif; Font selection */
+    font-family: 'Nunito', sans-serif;
+}
+
+    /* About me page */
+/* ABOUT ME header */
+.about_main-body h1{
+    /* padding: 2%; */
+    margin-top: 2%;
+    text-align: center;
+    font-size: 90px;
+}
+/* about me underline */
+/* .about_main-body h1::after{
+    text-align: center;
+    content: '';
+    width: 90%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+} */
+.about-row1{
+    /* margin-top: 0.5%; */
+    margin-left: 19%;
+    margin-right: 19%;
+    display: flex;
+    justify-content: space-between;
+    /* left: 20px;
+    right: 20px; */
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    
+}
+.about-row1_text-box h1{
+    text-align: center;
+}
+.about-row1 img{
+    width: 500px;
+    padding: 2%;
+    margin: 2%;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+.about-row1_text-box{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    /* padding: 2%; */
+    margin: 2%;
+}
+.about-row1_text-box ul{
+    height: 100%;
+    list-style: none; /* No bullet points */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.about-row1_text-box ul li{
+    font-size: 30px;
+    /* padding: 8px 0px; */
+    justify-content: space-between;
+}
+
+/* Hobbies and Interets */
+.about-row2{
+    color: #000;
+    padding: 2%;
+}
+.about-row2 h2{
+    text-align: center;
+    font-size: 75px;
+}
+
+/* Adjusting for smaller displays; any adjustments to the values above are added here
+    so that smaller/mobile displays take on these values instead */
+@media(max-width: 700px){
+    .index_text-box h1{
+        font-size: 200%;
+    }
+}
