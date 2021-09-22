@@ -94,7 +94,11 @@
     padding-bottom: 20px;
 }
 
-     /* ------------- MARS ROVER ------------- */
+#countdown_headline{
+    background-image: url(../images/projects/countdown.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #marsrover_headline{
     background-image: url(../images/projects/mars_rover/headline.jpg);
 }

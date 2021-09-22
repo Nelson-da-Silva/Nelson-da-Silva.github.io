@@ -1,28 +1,36 @@
-<!-- Projects page : showcasing my projects -->
-<!DOCTYPE html>
-<html>
+<!-- Front page of the website, mainly used for navigation and introductions -->
 
-<!-- Meta information for the HTML page -->
-<head>
+<!-- Explanation of the tags/elements : https://www.w3schools.com/html/html_intro.asp -->
+<!DOCTYPE html> <!-- Defines the document as an HTML5 document -->
+<html> <!-- Root element of the HTML page-->
+
+<head> <!-- Contains meta information about the HTML page -->
+    <!-- Meta information used to help load the page faster -->
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
 
     <!-- Title for the HTML page - shown in the page's tab -->
-    <title> About Me </title> 
+    <title> Nelson da Silva </title> 
 
     <!-- Connecting this HTML document to the associated style.css file -->
-    <link rel="stylesheet" href="about.css">
+    <!-- https://teamtreehouse.com/community/htmlcss-linking -->
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header_footer.css">
 
     <!-- Fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 </head>
 
-<body>
+<body> <!-- Defines the document body, container for all visible contents-->
     <!-- Creating the class header which we set as the upper bit of the webpage -->
-    <section class="header">
+    <section class="index_header">
         <nav> <!-- Grouping navigation links -->
             <!-- a - Hyperlink back to the main website using a logo -->
             <a href="index.html"><img src="images/logo/stoicheion.regular-white.png"></a> <!-- https://www.fontspace.com/big-noodle-titling-font-f35093-->
@@ -31,44 +39,20 @@
                 <ul> <!-- Defining an unordered bulleted list -->
                     <!-- <li> represents an item in a list -->
                     <li><a href="index.html">HOME</a> </li>
-                    <li><a href="about.html">ABOUT ME</a> </li>
+                    <li><a href="under_construction.html">ABOUT ME</a> </li>
                     <li><a href="projects.html">PROJECTS</a> </li>
                     <li><a href="under_construction.html">EXPERIENCE</a> </li>
                     <!-- <li><a href="contact.html">CONTACT</a> </li> -->
                 </ul>
             </div>
         </nav>
-    </section>
 
-    <section class="about_main-body">
-        <div class="about-row1">
-            <div class = "about-row1_text-box">
-                <h1>about me</h1>
-                <!-- <h1>About Me</h1> -->
-                <ul>
-                    <!-- Hello! I am a 3rd year student at Imperial College London 
-                    currently enrolled in the 4-year MEng Electronics and Information
-                    Engineering course. I have a taste for Software Engineering
-                    and hope to find either a 6-month placement or 3-month
-                    internship for Summer 2022. Below you can learn more about me
-                    outside of university and education such as my hobbies and passions. -->
-                    <li>Imperial College London</li>
-                    <li>Electrical and Electronic Engineering MEng</li>
-                    <li>Currently in my 3rd year</li>
-                    <li>Aspiring Software Engineer</li>
-                    <li>Operating in London, England</li>
-                    <!-- <li>Born in Lisbon, Portugal</li> -->
-                </ul>
-            </div>
-            <img src="images/me/circular_sushi.png">
+        <div class="index_text-box">
+            <h1>Nelson da Silva's Portfolio</h1>
+            <p> Aspiring Software Engineer looking to fuel the future </p>
         </div>
 
-        <div class="about-row2">
-            <h2>hobbies and interests</h2>
-
-        </div>
-
-        <section class="footer">
+        <div class="index_footer">
             <p>Website programmed and designed by Nelson da Silva using HTML and CSS in Summer 2021</p>
             <div class="footer_links">
                 <ul>
@@ -80,9 +64,26 @@
                     <li><p2><a href="https://github.com/NDS19"><img src="images/icons/github.png"></a></p2></li>
                 </ul>
             </div>
-        </section>
+        </div>
+        
     </section>
-</body>
 
+    <script>
+
+    // function copyToClipboard(element) {
+    //     /* Get the text field */
+    //     var copyText = document.getElementById("p2");
+
+    //     /* Select the text field */
+    //     copyText.select();
+    //     copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    //     /* Copy the text inside the text field */
+    //     document.execCommand("copy");
+    // }
+
+    </script>
+
+</body>
 
 </html>
