@@ -1,10 +1,3 @@
-/*  
-    CSS files describe how HTML elements are displayed on the screen.
-    It is used to define styles for web pages including the design, layout
-        and variations in display for different devices and screen sizes.
-    https://www.w3schools.com/css/css_intro.asp
-*/
-
 /*
     CSS Syntax - https://www.w3schools.com/css/css_syntax.asp
 */
@@ -15,14 +8,14 @@
     padding: 0; /* Creating space around elements INSIDE their borders*/
     /* font-family: 'Atkinson Hyperlegible', sans-serif; Font selection */
     font-family: 'Nunito', sans-serif;
+    color: #FFF7B6;
 }
 
 /* Adjusting the properties of the index header class */
 .index_header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
-        url(images/dalby_court.jpg);
+    background-color: #03070a;
     background-position: center;
     background-size: cover;
     position: relative;

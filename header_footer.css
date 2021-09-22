@@ -63,7 +63,6 @@ nav img{
 }
 /* Adjusting the hyperlink(?) properties of the items in the list */
 .nav-links ul li a{ 
-    color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
@@ -75,7 +74,7 @@ gradient that goes into the full red line effect once we've hovered over */
     content: '';
     width: 0%;
     height: 2px;
-    background: #fff;
+    background: #FFF7B6;
     display: block;
     margin: auto;
     transition: 0.5s; /* Transition time to get to hover state */
@@ -86,7 +85,6 @@ gradient that goes into the full red line effect once we've hovered over */
 
 .index_text-box{
     width: 90%;
-    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,9 +105,11 @@ gradient that goes into the full red line effect once we've hovered over */
     right: 0;
     justify-content: space-between;
     align-items: center;
+
+    color: #FFF7B6;
 }
 .index_footer p{
-    color: #fff;
+    color: #FFF7B6;
 }
 
 body{
@@ -139,7 +139,7 @@ body{
         url(images/dalby_court_footer.jpg);
 }
 .footer p{
-    color: #fff;
+    color: #FFF7B6;
 }
 
 .footer_links{
@@ -156,7 +156,7 @@ body{
     width: 18px;
 }
 .footer_links ul li p1{
-    color: #fff;
+    color: #FFF7B6;
     margin: 10px 0px;
 }
 
