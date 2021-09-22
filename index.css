@@ -15,7 +15,8 @@
 .index_header{
     min-height: 100vh;
     width: 100%;
-    background-color: #03070a;
+    /* background-color: #202124; */
+    background-image: linear-gradient(#202124, #1b1c1f);
     background-position: center;
     background-size: cover;
     position: relative;
