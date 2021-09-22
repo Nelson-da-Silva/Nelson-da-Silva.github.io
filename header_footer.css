@@ -152,12 +152,19 @@ body{
     padding: 0px 12px;
     position: relative;
 }
+.footer_links ul li a{
+    text-decoration: none;
+}
 .footer_links ul li img{
     width: 18px;
 }
 .footer_links ul li p1{
     color: #FFF7B6;
     margin: 10px 0px;
+}
+.footer_links ul li p2{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
