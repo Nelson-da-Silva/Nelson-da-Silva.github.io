@@ -1,9 +1,11 @@
     /* About me page */
-/* ABOUT ME header */
+.about_main-body{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/* headers */
 .about_main-body h1{
-    /* padding: 2%; */
-    margin-top: 2%;
-    text-align: center;
+    text-align: left;
     font-size: 45px;
 }
 /* about me underline */
@@ -16,58 +18,55 @@
     display: block;
     margin: auto;
 } */
-.about-row1{
-    /* margin-top: 0.5%; */
-    margin-left: 19%;
-    margin-right: 19%;
-    display: flex;
-    justify-content: space-between;
-    /* left: 20px;
-    right: 20px; */
-    /* background-color: rgba(255, 255, 255, 0.3); */
-    
+#about_row{
+
+    /* background-color: bisque ; */
 }
-.about-row1_text-box h1{
-    text-align: center;
+.about-row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .about-row1 img{
     width: 250px;
-    padding: 2%;
-    margin: 2%;
-    /* background-color: rgba(255, 255, 255, 0.3); */
+    height: 250px;
 }
-.about-row1_text-box{
-    /* padding: 2%; */
-    margin: 2%;
-}
-.about-row1_text-box ul{
-    height: 100%;
-    list-style: none; /* No bullet points */
+.about-row1 .text-box{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+
+    padding-right: 50px;
 }
-.about-row1_text-box ul li{
-    font-size: 30px;
-    /* padding: 8px 0px; */
-    justify-content: space-between;
+.about-row1 .text-box ul{
+    list-style: none; /* No bullet points */
+    right: 0px;
+}
+.about-row1 ul li{
+    font-size: 25px;
 }
 
-/* Hobbies and Interets */
-.about-row2{
-    padding: 2%;
+/* Education */
+.about-row2 #edu_image{
+    max-width: 400px;
+    max-width: 400px;
 }
-.about-row2 h2{
+/* .about-row2 h{
     text-align: center;
     font-size: 75px;
-}
+} */
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
     so that smaller/mobile displays take on these values instead */
 @media(max-width: 700px){
-    .index_text-box h1{
-        font-size: 200%;
+    .about_main-body{
+        margin-left: 0px;
+        margin-right: 0px;
+        position: center;
+        text-align: center;
     }
+    .about-row1{
+        flex-direction: column;
+    }
+
 }

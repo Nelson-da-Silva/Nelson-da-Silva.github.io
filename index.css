@@ -1,12 +1,34 @@
 /* Adjusting the properties of the index header class */
-/* .index_header{
-    min-height: 100vh;
+
+.index_header{
+    /* min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(#202124, #1b1c1f);
     background-position: center;
     background-size: cover;
+    position: relative; */
+
+    min-height: 10%;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), 
+        url(images/dalby_court.jpg); */
+    background-position: center;
+    background-size: cover;
     position: relative;
-} */
+}
+
+.index_text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.index_text-box h1{
+    font-size: 400%;
+}
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
     so that smaller/mobile displays take on these values instead */
