@@ -1,26 +1,12 @@
-/*
-    CSS Syntax - https://www.w3schools.com/css/css_syntax.asp
-*/
-
-/* Adjusting the style for all elements using * */
-*{
-    margin: 0; /* Creating space around the borders of elements */
-    padding: 0; /* Creating space around elements INSIDE their borders*/
-    /* font-family: 'Atkinson Hyperlegible', sans-serif; Font selection */
-    font-family: 'Nunito', sans-serif;
-    color: #FFF7B6;
-}
-
 /* Adjusting the properties of the index header class */
-.index_header{
+/* .index_header{
     min-height: 100vh;
     width: 100%;
-    /* background-color: #202124; */
     background-image: linear-gradient(#202124, #1b1c1f);
     background-position: center;
     background-size: cover;
     position: relative;
-}
+} */
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
     so that smaller/mobile displays take on these values instead */
