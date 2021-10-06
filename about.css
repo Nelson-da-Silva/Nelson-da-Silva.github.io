@@ -52,10 +52,6 @@
 }
 
 /* Education */
-.about-row2{
-    justify-content: space-between;
-    padding-top: 2%;
-}
 #edu_image{
     /* position: absolute; */
     max-width: 50%;
@@ -63,19 +59,28 @@
 }
 #text_box{
     font-size: 23px;
-}
-
-.about-row2 #text_box{
-    padding-left: 5%;
+    max-width: 50%;
 }
 #text_box p{
     padding-top: 2%;
     min-width: 50%;
 }
-
-.about-row3{
+.image_attribution{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+    /* Imperial */
+.about-row2{
+    justify-content: space-between;
+    padding-top: 2%;
+}
+.about-row2 #text_box{
+    padding-left: 5%;
+}
+
+    /* St Paul's Catholic College */
+.about-row3{
     justify-content: space-between;
     padding-top: 2%;
 
@@ -89,18 +94,11 @@
     max-width: 50%;
     right: 0;
 }
-.about-row3 #edu_image{
-    /* position: absolute; */
+.stpauls_img {
+    position: relative;
     width: 100%;
-    max-width: 100%;
-    right: 0;
 }
 
-
-.image_attribution{
-    display: flex;
-    flex-direction: column;
-}
 /* .about-row2 h{
     text-align: center;
     font-size: 75px;
