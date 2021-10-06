@@ -69,6 +69,11 @@
     display: flex;
     flex-direction: column;
 }
+.attribution_caption{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1px;
+}
 
     /* Imperial */
 .about-row2{
@@ -90,12 +95,10 @@
 .about-row3 #text_box{
     padding-right: 5%;
 }
-.image_attribution #st_pauls{
-    max-width: 50%;
-    right: 0;
+#stpauls_image{
+    float: right;
 }
 .stpauls_img {
-    position: relative;
     width: 100%;
 }
 
