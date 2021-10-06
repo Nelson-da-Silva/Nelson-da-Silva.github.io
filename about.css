@@ -19,13 +19,18 @@
     margin: auto;
 } */
 #about_row{
-
+    display: flex;
+    flex-direction: row;
     /* background-color: bisque ; */
+
+    /* Distances between each row */
+    padding-bottom: 5%;
 }
 .about-row1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* padding-top: 0%; */
 }
 .about-row1 img{
     width: 250px;
@@ -47,9 +52,54 @@
 }
 
 /* Education */
-.about-row2 #edu_image{
-    max-width: 400px;
-    max-width: 400px;
+.about-row2{
+    justify-content: space-between;
+    padding-top: 2%;
+}
+#edu_image{
+    /* position: absolute; */
+    max-width: 50%;
+    max-height: 100%;
+}
+#text_box{
+    font-size: 23px;
+}
+
+.about-row2 #text_box{
+    padding-left: 5%;
+}
+#text_box p{
+    padding-top: 2%;
+    min-width: 50%;
+}
+
+.about-row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+
+    position: relative;
+    /* background-color: bisque; */
+}
+.about-row3 #text_box{
+    padding-right: 5%;
+}
+.image_attribution #st_pauls{
+    max-width: 50%;
+    right: 0;
+}
+.about-row3 #edu_image{
+    /* position: absolute; */
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+}
+
+
+.image_attribution{
+    display: flex;
+    flex-direction: column;
 }
 /* .about-row2 h{
     text-align: center;
