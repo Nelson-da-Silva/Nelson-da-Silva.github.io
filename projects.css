@@ -63,10 +63,12 @@
     color: black;
 }
 
+.projects_row #online_portfolio{
+    background-color: rgb(255,247,182);
+}
 .projects_row #countdown{
     background-image: linear-gradient(rgba(255,247,182,0.6),rgba(255,247,182,0.8)), 
         url(images/projects/countdown.png);
-    transition: 0.5s;
 }
 .projects_row #countdown:hover{
     background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
