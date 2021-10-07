@@ -114,55 +114,47 @@
     justify-content: space-between;
     /* background-color: bisque; */
     width: 100%;
+
+    padding-top: 10px;
 }
 .hobbies_row .slot{
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     border-radius: 2%;
-    padding: 5% 2%;
-    margin: 1% 1%;
-    width: 30%;
-    /* height: 100%; */
+    /* padding: 5% 2%; */
+    width: 31%;
+    height: 150px;
 
     text-align: center;
+    margin: auto;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
+    background-color: rgba(255,247,182,1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobbies_text{
+    margin: auto;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
 }
-
-.hobbies_row .slot:hover h{
+.hobbies_row .slot h{
     font-size: 20px;
     color: black;
 }
-.hobbies_row .slot:hover p{
+.hobbies_row .slot p{
     font-size: 15px;
     color: black;
+    display: none;
 }
-.hobbies_row #football{
-    font-size: 0px;
-    background-image: linear-gradient(rgba(255,247,182,0),rgba(255,247,182,0)), 
-        url(images/about_me/emirates.jpg);
+
+.hobbies_row .slot:hover p{
+    display: inline;
 }
-.hobbies_row #football:hover{
-    background-image: linear-gradient(rgba(255,247,182,0.8),rgba(255,247,182,0.8)), 
-        url(images/about_me/emirates.jpg);
-}
-.emirates_img{
-    float: right;
-    max-width: 400px;
-}
-.hobbies_text{
-    max-width: 100%;
-    flex-direction: row;
-    font-size: 23px;
-}
-/* .baller_img{
-    float: right;
-    max-width: 40px;
-} */
+
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
     so that smaller/mobile displays take on these values instead */
