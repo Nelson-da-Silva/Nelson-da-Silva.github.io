@@ -2,6 +2,7 @@
 .about_main-body{
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 10%;
 }
 /* headers */
 .about_main-body h1{
@@ -155,6 +156,24 @@
     display: inline;
 }
 
+    /* Skills row */
+.about-row5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.about-row5 img{
+    width: 64px;
+}
+figure{
+    text-align: center;
+}
+#icons_attribution{
+    right: 0px;
+    font-size: 10px;
+    padding-top: 5px;
+}
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
     so that smaller/mobile displays take on these values instead */
