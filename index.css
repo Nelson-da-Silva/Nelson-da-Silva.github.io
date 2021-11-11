@@ -20,7 +20,7 @@
 .index_text-box{
     width: 90%;
     margin: auto;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(0, -50%);
     text-align: center;
 }
 
