@@ -34,4 +34,8 @@
     .index_text-box h1{
         font-size: 200%;
     }
+
+    #menu_open{
+        size: 10px;
+    }
 }
