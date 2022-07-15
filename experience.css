@@ -54,6 +54,11 @@
     width: 70%;
 }
 
+.node img{
+    padding-top: 20px;
+    width: 60px;
+}
+
 .skills_box{
     padding-top: 10px;
     width: 70%;
@@ -94,6 +99,10 @@
     padding-top: 12px;
     position: relative;
 } */
+
+.gitlogo {
+    font-size: 20px;
+}
 
 .skills ul li .skills_node{
     background-color: rgba(255,247,182, 0.8);
