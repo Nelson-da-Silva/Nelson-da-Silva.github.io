@@ -46,47 +46,153 @@
         <p> Here is a list of chronologically ordered past projects either assigned by my university or done individually </p>
     </div> -->
 
-    <div class="projects_images">
-        <div class="projects_row">
-            <a class="slot" id="online_portfolio" href="under_construction.html">
-                <h>This Website</h>
-                <p class="subheader">Individual, Summer 2021</p>
-            </a>
-            <a class="slot" id="countdown" href="under_construction.html">
-                <h>Countdown app</h>
-                <p class="subheader">Individual, Summer 2021</p>
-            </a>
-            <a class="slot" id="marsrover" href="project_pages/projects_marsrover.html">
-                <h>Percy the Mars Rover</h>
-                <p class="subheader">6-person, Summer 2021</p>
-            </a>
+    <div class="projects_images">        
+        <div class="projects_row" id="online_portfolio">
+            <div class="text_box">
+                <h> Online Portfolio </h>
+                <h3> Individual, Summer 2021 </h3>
+                <p>
+                    Taught myself HTML and CSS to put together this website.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - HTML, CSS<br>
+                </p>
+                <a class="gitlogo" href=https://github.com/Nelson-da-Silva/NDS19.github.io><img src="images/icons/github-dark.png"></a>
+            </div>
+            <div class="img_box_right">
+                <img src="images/projects/website-laptop-shadow.png">
+            </div>
         </div>
 
-        <div class="projects_row">
-            <a class="slot" id="worldofde10s" href="project_pages/projects_worldofde10s.html">
-                <h>World of DE10s</h>
-                <p class = "subheader">6-person, Spring 2021</p>
-            </a>
-            <a class="slot" id="compiler" href="project_pages/projects_compiler.html">
-                <h>C to MIPS compiler</h>
-                <p class="subheader">2-person, Spring 2021</p>
-            </a>
-            <a class="slot" id="verilog-mips-cpu" href="project_pages/projects_veri-mips-cpu.html">
-                <h>Verilog MIPS CPU</h>
-                <p class="subheader">6-person, Spring 2021</p>
-            </a>
+        <div class="projects_row" id="countdown">
+            <div class="img_box_left">
+                <img src="images/projects/countdown_phone_shadow.png">
+            </div>
+            <div class="text_box">
+                <h> Countdown </h>
+                <h3> Individual, Summer 2021 </h3>
+                <p>
+                    After following an online tutorial on how to make a simple 
+                    memory game app, I went on to build a countdown app consisting
+                    of stopwatch and timer features.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - Kotlin<br>
+                    - Android Studio
+                </p>
+            </div>
         </div>
 
-        <div class="projects_row">
-            <a class="slot" id="mu0_cpu" href="project_pages/projects_mu0.html">
-                <h>MU0 CPU</h>
-                <p class="subheader">3-person, Summer 2020</p>
-            </a>
+        <div class="projects_row" id="marsrover">
+            <div class="text_box">
+                <h> Percy the Mars Rover </h>
+                <h3> 6-person, Summer 2021 </h3>
+                <p>
+                    End of year coursework to create a rover capable of autonomous
+                    and manual motion with object detection where the target objects
+                    are 5 different coloured balls.
+                    <br><br>
+                    Personally worked on the Vision subsystem using a D8M-Camera module
+                    connected to a DE10-Lite board holding an FPGA which was used
+                    to configure a NIOS II processor and other components on; made the
+                    rover capable of detecting ping pong balls, identifying the
+                    different colour and calculating the distance of the ball from the
+                    camera.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - C, C++, Verilog<br>
+                    - Quartus Prime, Arduino IDE
+                </p>
+                <a class="gitlogo" href=https://github.com/sdoif/PercyTheMarsRover><img src="images/icons/github-dark.png"></a>
+            </div>
+            <div class="img_box_right" id="mars_img">
+                <img src="images/projects/mars_rover/thumbnail.jpg">
+            </div>
+        </div>
 
-            <!-- <a class="slot" id="" href="">
-                <h>Placeholder</h>
-                <p class="subheader">Group size, When</p>
-            </a> -->
+        <div class="projects_row" id="worldofde10s">
+            <div class="img_box_left" id="de10_img">
+                <img src="images/projects/world_of_de10s/fpga_shadow.png">
+            </div>
+            <div class="text_box">
+                <h> World of DE10s </h>
+                <h3> 6-person, Spring 2021 </h3>
+                <p>
+                    Developed a 1v1 tank game established through an IoT system using 2 FPGAs,
+                    which act as controllers, are connected to PCs which act as nodes which
+                    communicate with a TCP server hosted on an AWS client.
+                    <br>
+                    Personally worked on configuring the FPGA and making the program to 
+                    run on the instantiated NIOS II processor to convert metrics from
+                    the accelerometer into WASD movements. Also established the data flow
+                    from the FPGA to a host PC.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - C, Python<br>
+                    - Quartus Prime
+                </p>
+                <a class="gitlogo" href=https://github.com/simon-staal/World_of_DE10s><img src="images/icons/github-dark.png"></a>
+            </div>
+        </div>
+        <div class="projects_row" id="mips_compiler">
+            <div class="text_box">
+                <h> C-to-MIPS compiler </h>
+                <h3> 2-person, Spring 2021 </h3>
+                <p>
+                    Worked towards writing a compiler capable of converting C code 
+                    to MIPS assembly code. Wrote a lexer using Flex to break down input
+                    streams of text into its tokens. We then wrote a parser to identify
+                    constructs such as if statements, while loops, variable
+                    assignments etc. Formed an AST using a series of header files 
+                    written in C++ to handle compilation of the parsed information.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - C++, Yacc, Flex, Shell<br>
+                </p>
+            </div>
+        </div>
+        <div class="projects_row" id="verilog">
+            <div class="text_box">
+                <h> Verilog MIPS CPU </h>
+                <h3> 6-person, Spring 2021 </h3>
+                <p>
+                    Created a working synthesizable 32-bit instructions MIPS
+                    multicycle processor using Verilog capable of executing 48
+                    given instructions.
+                    <br>
+                    Personally worked on creating the testbench for the CPU
+                    using shell scripts. Also wrote many of the test cases.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - Verilog, C++, Shell
+                </p>
+            </div>
+        </div>
+        <div class="projects_row" id="mu0">
+            <div class="text_box">
+                <h> MU0 CPU </h>
+                <h3> 3-person, Summer 2020 </h3>
+                <p>
+                    Designed a MU0 optimised for the following algorithms:<br>
+                    - Calculating Fibonacci numbers using recursion,<br>
+                    - Calculate pseudo-random integers with a linear congruential generator (LCG), <br>
+                    - Traverse a linked list to find an item.
+                    <br><br>
+                    I worked on optimising the CPU for the task of calculating Fibonacci numbers
+                    using recursion. This task introduced me to stack memory which uses the 'last in, first out' data
+                    structure which we were directed to use to implement this task. The section of the report
+                    detailing the process I underwent and the final product for the Fibonacci number generator
+                    can be found <a href="../images/projects/mu0/fibonacci_writeup.pdf">here</a>.
+                    <br><br>
+                    Languages and Softwares involved:<br>
+                    - Verilog<br>
+                    - Quartus Prime
+                </p>
+                <a class="gitlogo" href=https://github.com/Nelson-da-Silva/isa_team3_mips><img src="images/icons/github-dark.png"></a>
+            </div>
+            <!-- <div class="img_box_right" id="mu0_img">
+                <img src="images/projects/mu0/quartus.png">
+            </div> -->
         </div>
     </div>
 
