@@ -31,12 +31,74 @@
 }
 
 .projects_row{
-    left: 5%;
-    padding: 0% 1%;
+    /* left: 5%; */
+    margin: 10px 10%;
+    margin-bottom: 1%;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(255,247,182,0.8);
+    border-radius: 10px;
+    min-height: 20px;
+    /* height: 200px; */
 }
-.projects_row .slot{
+
+.text_box{
+    margin: 5% 10%;
+    /* margin-right: 40%; */
+}
+
+.projects_row .text_box h{
+    /* padding-left: 10%;
+    /* paddin */
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+.projects_row h3{
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+
+.projects_row p{
+    font-size: 20px;
+    padding-top: 4%;
+    color: black;   
+}
+
+.projects_row .gitlogo img{
+    padding-top: 5px;
+    width: 40px;
+}
+
+.projects_row .img_box_right{
+    margin: auto 10% auto 0%;
+    max-height: 80%;
+}
+
+.projects_row .img_box_left{
+    margin: auto 0% auto 10%;
+    padding: 20px 0;
+    max-height: 80%;
+}
+
+.projects_row .img_box_right img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#mars_img img{
+    border-radius: 10px;
+}
+
+.projects_row .img_box_left img{
+    max-width: 450px;
+    max-height: 350px;
+}
+
+/* .projects_row .slot{
     flex-basis: 100%;
     border-radius: 2%;
     text-align: center;
@@ -48,103 +110,16 @@
     background-position: center;
     background-size: cover;
     position: relative;    
-}
-.projects_row .slot:hover{
+} */
+/* .projects_row .slot:hover{
     background-color: rgb(255,247,182)
-}
-.projects_row h{
-    font-size: 20px;
-    text-align: center;
-    color: black;
-}
-.projects_row .subheader{
-    font-size: 10px;
-    text-align: center;
-    color: black;
+} */
+
+#online_portfolio{
+    /* width: 70%; */
+    /* background-color: rgba(255,247,182,0.6); */
 }
 
-.projects_row #online_portfolio{
-    background-color: rgb(255,247,182);
-}
-.projects_row #countdown{
-    background-image: linear-gradient(rgba(255,247,182,0.6),rgba(255,247,182,0.8)), 
-        url(images/projects/countdown.png);
-}
-.projects_row #countdown:hover{
-    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
-        url(images/projects/countdown.png);
-}
-.projects_row #countdown:hover h{
-    color: rgb(255,247,182);
-}
-.projects_row #countdown:hover p{
-    color: rgb(255,247,182);
-}
-
-.projects_row #marsrover{
-    background-image: linear-gradient(rgba(255,247,182,0.7),rgba(255,247,182,0.7)), 
-        url(images/projects/mars_rover/thumbnail.jpg);
-}
-.projects_row #marsrover:hover{
-    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)), 
-        url(images/projects/mars_rover/thumbnail.jpg);    
-}
-
-.projects_row #worldofde10s{
-    background-image: linear-gradient(rgba(255,247,182,0.7),rgba(255,247,182,0.7)), 
-        url(images/projects/world_of_de10s/de10_landscape.jpg);
-}
-.projects_row #worldofde10s:hover{
-    background-image: linear-gradient(rgba(255,247,182,0),rgba(255,247,182,0)), 
-        url(images/projects/world_of_de10s/de10_landscape.jpg);
-    color: rgb(255,247,182);
-}
-.projects_row #worldofde10s:hover h{
-    color: rgb(255,247,182);
-}
-.projects_row #worldofde10s:hover p{
-    color: rgb(255,247,182);
-}
-
-.projects_row #compiler{
-    background-image: linear-gradient(rgba(255,247,182,0.7),rgba(255,247,182,0.7)), 
-        url(images/projects/compiler/fullscreen_code.jpg);
-}
-.projects_row #compiler:hover{
-    background-image: linear-gradient(rgba(255,247,182,0),rgba(255,247,182,0)), 
-        url(images/projects/compiler/fullscreen_code.jpg);
-    color: rgb(255,247,182);
-}
-.projects_row #compiler:hover h{
-    color: rgb(255,247,182);
-}
-.projects_row #compiler:hover p{
-    color: rgb(255,247,182);
-}
-
-.projects_row #verilog-mips-cpu{
-    background-image: linear-gradient(rgba(255,247,182,0.7),rgba(255,247,182,0.7)), 
-        url(images/projects/verilog_cpu.jpg);
-}
-.projects_row #verilog-mips-cpu:hover{
-    background-image: linear-gradient(rgba(255,247,182,0),rgba(255,247,182,0)), 
-        url(images/projects/verilog_cpu.jpg);
-}
-.projects_row #verilog-mips-cpu:hover h{
-    color: rgb(255,247,182);
-}
-.projects_row #verilog-mips-cpu:hover p{
-    color: rgb(255,247,182);
-}
-
-.projects_row #mu0_cpu{
-    background-image: linear-gradient(rgba(255,247,182,0.7),rgba(255,247,182,0.7)), 
-        url(images/projects/mu0/quartus.png);
-}
-.projects_row #mu0_cpu:hover{
-    background-image: linear-gradient(rgba(255,247,182,0),rgba(255,247,182,0)), 
-        url(images/projects/mu0/quartus.png);
-}
 
 
 /* Adjusting for smaller displays; any adjustments to the values above are added here
